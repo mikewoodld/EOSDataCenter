@@ -33,6 +33,13 @@ You can also turn the module on/off using OSC
 
 - EDC reponds with `/weather/out/set/units=imperial` 
 
+`/weather/set/forecast/hourly=8` will set the total number of hourly forecasts you want (0 for none, up to 8 for +8 hours in the future)
+
+- EDC reponds with `/weather/out/set/forecast/hourly=8` 
+
+`/weather/set/forecast/daily=5` will set the total number of hourly forecasts you want (0 for none, up to 5 for +5 days in the future)
+
+- EDC reponds with `/weather/out/set/forecast/daily=5` 
 
 ### Setting the refresh rate
 `/weather/set/refresh=5` will set the refresh interval to 5 seconds. 
@@ -73,7 +80,7 @@ You can also turn the module on/off using OSC
 
 ### Hourly Forecast
 
-You can get up to 8 hours of future forecast - just change the `/next/1/` to `/next/2/` up to `/next/8/` for example. 
+You can get up to 8 hours of future forecast - just change the `/next/1/` to `/next/2/` up to `/next/8/` for example. You must set up how many you want in your initial connection to EOS (See above)
 
 `/weather/out/forecast/hourly/next/1/hour=15:00` (returns the name of the next hour)
 
@@ -85,7 +92,7 @@ You can get up to 8 hours of future forecast - just change the `/next/1/` to `/n
 
 ### Daily Forecast
 
-You can get up to 5 days of future forecast - just change the `/next/1/` to `/next/2/` up to `/next/5/` for example. 
+You can get up to 5 days of future forecast - just change the `/next/1/` to `/next/2/` up to `/next/5/` for example. You must set up how many you want in your initial connection to EOS (See above)
 
 `/weather/out/forecast/daily/next/1/date="August 9, 2020"` (returns the date of the next day)
 
