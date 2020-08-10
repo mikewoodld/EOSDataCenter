@@ -18,7 +18,8 @@ You can search for a particular place near your current location. Useful for fin
   
 ## Searching for a place:
 
-(Free Tier)
+#### (Free Tier)
+
 send
 
 `/places/get/place="Chipotle"`
@@ -32,7 +33,8 @@ will return
 `/places/out/get/place/type="restaurant - food"`
 
 
-(Paid Tier)
+#### (Paid Tier)
+
 send
 
 `/places/search/place="Chipotle"`
@@ -49,6 +51,11 @@ will return
 
 `/places/out/search/place/1/open="Open"` (or Closed)
 
-`/places/out/search/place/2/pricelevel="$"` ($, $$, $$$ price levels)
+`/places/out/search/place/1/pricelevel="$"` ($, $$, $$$ price levels)
 
-`/places/out/search/place/2/rating=4.5`
+`/places/out/search/place/1/rating=4.5`
+
+Substitute the integer in  `/place/1/` on your magic sheet to display up to 5 search results. 
+
+
+
