@@ -10,7 +10,7 @@ There are two different types of searches that you can do with different billing
 
 ### Free 
   
-You can get details for a single search result.
+You can get details for a single search result, the closest result to your location.
   
 ### Paid
 
@@ -28,7 +28,7 @@ will return
 
 `/places/out/get/place/name="Chipotle Mexican Grill"`
 
-`/places/out/get/place/address="736 Thompson Lane, Nashville TN 37204, United States"`
+`/places/out/get/place/address="736 Thompson Lane, Nashville"`
 
 `/places/out/get/place/type="restaurant - food"`
 
@@ -43,9 +43,9 @@ will return
 
 `/places/out/search/place/1/name="Chipotle Mexican Grill"`
 
-`/places/out/search/place/1/address="736 Thompson Lane, Nashville TN 37204, United States"`
+`/places/out/search/place/1/address="736 Thompson Lane, Nashville"`
 
-`/places/out/search/place/1/type="restaurant - food"`
+`/places/out/search/place/1/type="food"`
 
 `/places/out/search/place/1/open="Open"` (or Closed)
 
@@ -56,4 +56,10 @@ will return
 Substitute the integer in  `/place/1/` on your magic sheet to display up to 5 search results. 
 
 
+## Other Searches
 
+You can search for just about anything.
+
+`/places/search/place="Mexican"` - 5 closest Mexican Restaurants 
+
+`/places/search/place="Grocery"` - 5 closest Grocery Stores
