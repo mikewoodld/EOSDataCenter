@@ -42,23 +42,22 @@ You can also turn the module on/off using OSC
 - EDC reponds with `/weather/out/set/forecast/daily=5` 
 
 ### Setting the refresh rate
-`/weather/set/refresh=5` will set the refresh interval to 5 seconds. 
 
-`/weather/set/refresh=OFF` will turn off the automatic refresh
+The weather module sends you new forecasts every 15 minutes unless you disable it.
 
-`/weather/get/current=yes` will send current weather report, but only once. 
+`/weather/get/current=yes` will send current weather report, regardless of enable/disable status. (only once)
 
 ## Data you will recieve
 
 `/weather/out/current/date="Monday, August 2nd 2024"`
 
-`/weather/out/current/temp=80.2`
+`/weather/out/current/temp=80.2°`
 
-`/weather/out/current/temp/high=90.2`
+`/weather/out/current/temp/high=90.2°`
 
-`/weather/out/current/temp/low=70.2`
+`/weather/out/current/temp/low=70.2°`
 
-`/weather/out/current/feelslike=84.1`
+`/weather/out/current/feelslike=84.1°`
 
 `/weather/out/current/pressure=1020`
 
@@ -76,13 +75,13 @@ You can also turn the module on/off using OSC
 
 `/weather/out/current/weather="Partly cloudy"`
 
-`/weather/out/current/rainchance=.4`
+`/weather/out/current/rainchance="40%"`
 
 ### Sunrise/Sunset
 
-`/weather/out/today/sunrise="06:00"`
+`/weather/out/today/sunrise="06:00:00"`
 
-`/weather/out/today/sunset="20:04"`
+`/weather/out/today/sunset="20:04:00"`
 
 ### Hourly Forecast
 
@@ -90,25 +89,25 @@ You can get up to 8 hours of future forecast - just change the `/next/1/` to `/n
 
 `/weather/out/forecast/hourly/next/1/hour=15:00` (returns the name of the next hour)
 
-`/weather/out/forecast/hourly/next/1/temp=81.2`
+`/weather/out/forecast/hourly/next/1/temp=81.2°`
 
 `/weather/out/forecast/hourly/next/1/weather="Partly cloudy"`
 
-`/weather/out/forecast/hourly/next/1/rainchance=.6`
+`/weather/out/forecast/hourly/next/1/rainchance="60%"`
 
 ### Daily Forecast
 
 You can get up to 5 days of future forecast - just change the `/next/1/` to `/next/2/` up to `/next/5/` for example. You must set up how many you want in your initial connection to EOS (See above)
 
-`/weather/out/forecast/daily/next/1/date="August 9, 2020"` (returns the date of the next day)
+`/weather/out/forecast/daily/next/1/date="Tuesday"` (returns the name of the next day)
 
-`/weather/out/forecast/daily/next/1/temp/high=81.2`
+`/weather/out/forecast/daily/next/1/temp/high=81.2°`
 
-`/weather/out/forecast/daily/next/1/temp/low=69.2`
+`/weather/out/forecast/daily/next/1/temp/low=69.2°`
 
 `/weather/out/forecast/daily/next/1/weather="Partly cloudy"`
 
-`/weather/out/forecast/daily/next/1/rainchance=.6`
+`/weather/out/forecast/daily/next/1/rainchance=60%`
 
 
 
