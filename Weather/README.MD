@@ -21,6 +21,8 @@ You can also turn the module on/off using OSC
 		
 - EDC reponds with `/weather/out/set/status=true (or false)`
 
+vvvvvvv DELETE THIS vvvvvv
+
 `/weather/set/api=apikeyhere` will set your API key
 
 - EDC reponds with `/weather/out/set/api=apikeyhere`
@@ -40,6 +42,9 @@ You can also turn the module on/off using OSC
 `/weather/set/forecast/daily=5` will set the total number of hourly forecasts you want (0 for none, up to 5 for +5 days in the future)
 
 - EDC reponds with `/weather/out/set/forecast/daily=5` 
+
+^^^^^^^ DELETE THIS ^^^^^^^^^
+
 
 ### Setting the refresh rate
 
