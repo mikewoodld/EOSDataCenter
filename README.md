@@ -9,7 +9,7 @@ Originally inspired by my HockEOS project, EDC currently supports
 
 - HockEOS
 - Live Weather
-- Traffic
+- Places
 - MTA Train Times
 
 
@@ -53,12 +53,12 @@ Right now, I'm going to leave all of the HockEOS documentation over at https://g
 
 ## Live Weather
 
-Live Weather Ino Here
+https://github.com/mikewoodld/EOSDataCenter/tree/master/Weather
 
-## Traffic
+## Places
 
-Traffic Info Here
+https://github.com/mikewoodld/EOSDataCenter/tree/master/Places
 
 ## MTA Train Times
 
-Train Time Info Here
+https://github.com/mikewoodld/EOSDataCenter/tree/master/MTA
