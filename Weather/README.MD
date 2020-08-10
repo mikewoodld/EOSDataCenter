@@ -52,6 +52,10 @@ You can also turn the module on/off using OSC
 
 `/weather/out/current/temp=80.2`
 
+`/weather/out/current/temp/high=90.2`
+
+`/weather/out/current/temp/low=70.2`
+
 `/weather/out/current/feelslike=84.1`
 
 `/weather/out/current/pressure=1020`
@@ -96,13 +100,13 @@ You can get up to 5 days of future forecast - just change the `/next/1/` to `/ne
 
 `/weather/out/forecast/daily/next/1/date="August 9, 2020"` (returns the date of the next day)
 
-`/weather/out/forecast/daily/next/1/temp=81.2`
+`/weather/out/forecast/daily/next/1/temp/high=81.2`
+
+`/weather/out/forecast/daily/next/1/temp/low=69.2`
 
 `/weather/out/forecast/daily/next/1/weather="Partly cloudy"`
 
 `/weather/out/forecast/daily/next/1/rainchance=.6`
 
-`/weather/out/forecast/daily/next/1/sunrise="06:00"`
 
-`/weather/out/forecast/daily/next/1/sunset="20:00"`
 
