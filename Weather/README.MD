@@ -50,6 +50,8 @@ You can also turn the module on/off using OSC
 
 ## Data you will recieve
 
+`/weather/out/current/date="Monday, August 2nd 2024"`
+
 `/weather/out/current/temp=80.2`
 
 `/weather/out/current/temp/high=90.2`
