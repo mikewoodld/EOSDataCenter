@@ -1,4 +1,4 @@
-# Weather Module Informatino
+# Weather Module Information
 
 The weather module uses the Open Weather Map API (https://openweathermap.org/api) 
 
