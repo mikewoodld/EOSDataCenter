@@ -41,8 +41,6 @@ send
 
 will return
 
-`/places/out/search/place/count=3`(A count of how many search results found. Max is 5.
-
 `/places/out/search/place/1/name="Chipotle Mexican Grill"`
 
 `/places/out/search/place/1/address="736 Thompson Lane, Nashville TN 37204, United States"`
